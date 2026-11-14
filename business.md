@@ -1,4 +1,4 @@
-# Tessera (working name)
+# Edgepiece
 
 Rough skeleton. Its job is to give us shared guidance, not to be a business plan. Change anything.
 
@@ -50,6 +50,5 @@ The point: a small platform team supports many product teams and many repos, so 
 - Anything beyond what a pipeline or repo needs.
 
 ## Open questions
-- Final name.
-- Whether any real artwork is used publicly, and under what terms (see notes in chat).
-- Public GitHub org name.
+- Whether to rename later (the working name stuck; GitHub org is `edgepiece`).
+- Whether any real artwork is used publicly, and under what terms.
