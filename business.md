@@ -36,6 +36,14 @@ The point: a small platform team supports many product teams and many repos, so 
 - Environments: `dev` and `prd`. Azure first. Kubernetes for the workloads.
 - Run containers locally on the desktop first. Use the cloud in short, budgeted bursts with teardown.
 
+## Engineering principles
+- **Trunk-based development.** Short-lived branches, small PRs, merge to `main` often. The goal is startup speed, not gitflow ceremony. Incomplete work ships behind feature flags.
+- **Two tiers: `dev` and `prd`.** Every change shows a visible progression from one to the other.
+- **Build once, promote.** One artifact (a container image, tagged by release version) is built a single time and promoted from `dev` to `prd`, never rebuilt per environment.
+- **Tagged releases.** Semantic versioning, automated changelogs, conventional commits.
+- **Progressive delivery.** Canary and/or blue/green releases, with automated rollback on failed health checks.
+- **Best practices on purpose.** Each practice gets a real, working example here, so it can be demonstrated, not just claimed.
+
 ## Not goals (for now)
 - Real customers, real payments, or real sales.
 - A polished brand or an HR-style org chart.
