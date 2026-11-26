@@ -28,7 +28,7 @@ How work is requested, tracked and shipped. Applies to every Edgepiece repo.
 | Done | Merged and the issue is closed. |
 
 ## Branches and pull requests
-- Branch from `main`: `<issue-number>-short-description`. Short-lived.
+- Branch from `main`: `<type>/<issue-number>-short-description`, where `<type>` is a conventional commit type (`feat`, `fix`, `docs`, `ci`, `chore`, and so on). Example: `feat/12-add-dependabot`. Short-lived.
 - PR title is a conventional commit (`type(scope): description`). It becomes the squash commit message, and release automation reads it. A `pr-title` check enforces the format.
 - PR body links the issue with `Closes #<number>`.
 - Required checks must pass before merge. Direct pushes to `main` are blocked where branch protection is enabled.
